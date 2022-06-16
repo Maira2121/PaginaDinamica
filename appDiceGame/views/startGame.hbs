@@ -1,0 +1,27 @@
+<header class="aling-center" id="sec-4e50">
+    <img src="/images/2228381.png" class="">
+    <h1 class="">¡Vamos a jugar!</h1>
+    <h1 class="">Comienza a jugar el mejor juego de dados</h1>
+</header>
+
+<section class="" id="sec-3e87">
+    <div class="box">
+
+        <input type="hidden" id="idGame" class="" value="{{game._id}}">
+        <div id="gamers-container" class=" gamers-container">
+            {{#each game.gamers}}
+            <div class="gamer-item ">
+                <input hidden id="idGamer" class="idGamer" value="{{_id}}">
+                <h2 id="name" class="gamer-name ">{{name}}</h2>
+                <h3 id="score_{{_id}}" class="score"></h3>
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="">
+            <button id="btn-start-game" class="">Iniciar
+                juego</button>
+            <a href="/"><button class="" type="button">Ir al inicio</button></a>
+        </div>
+</section>
+<script src="/javascripts/startGame.js"></script>

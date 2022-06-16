@@ -1,0 +1,34 @@
+<div class="">
+    {{#if games}}
+    {{#each games}}
+    <div class="box">
+        <div class="">
+            <h3 id="id" {{_id}} class="">Id juego: {{_id}}</h3>
+            {{#each gamers}}
+            <label>Jugador: {{name}}</label>
+            {{/each }}
+            <label> Estado:{{#if inProgress}} En progreso {{else}} Juego finalizado {{/if}}</label><br>
+        </div>
+        <div class="">
+            <a href="/game/{{_id}}" class="btn-small">Ver juego
+            </a>
+            <a href="/game/{{_id}}/winner" class="btn-small">Ganador
+            </a>
+            {{#if inProgress}}
+            <a href="/{{_id}}/startGame" class="btn-small"> Jugar
+            </a>
+            {{/if}}
+        </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <div class="box">
+        No se han cerado juegos
+    </div>
+    {{/if}}
+    <div class=" box aling-center">
+        <a href="/" class="btn-small">
+            Ir al inicio
+        </a>
+    </div>
+</div>

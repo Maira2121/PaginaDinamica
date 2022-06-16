@@ -1,0 +1,18 @@
+<section class="" id="sec-3e87">
+    <div class="box">
+        <div id="gamers-container" class="gamers-container ">
+            <div class="">
+                <h5>Id:{{game._id}}</h5>
+                <h5>Jugadores:</h5>
+                {{#each game.gamers}}
+                <p>{{name}} ==> Puntuación: {{score}}</p>
+                {{/each }}
+                <h4>Ganador: {{game.winner.name}}</h4>
+            </div>
+        </div>
+        <div>
+            <a href="/" id="btn-start-game" class="btn-small">Ir al inicio</a>
+
+        </div>
+    </div>
+</section>
