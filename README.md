@@ -1,5 +1,4 @@
-# ¡Bienvenido al repositorio creado para presentar el taller de la semana 4 de la Cantera nivel 2!
-## Taller semana 4: Ejercicio caso práctico de una página dinámica.
+# ¡Bienvenido al repositorio para presentar una página dinámica.
 
 Juego de dados para múltiples jugadores.
 
